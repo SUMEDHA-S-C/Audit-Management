@@ -27,12 +27,6 @@ namespace AuditManagementPortalClientMVC.Repository
             var response = client.SendAsync(request).ConfigureAwait(false);
 
             var responseInfo = response.GetAwaiter().GetResult();
-            //HttpResponseMessage response = client.GetAsync("http://localhost:14089/api/AuditChecklist" + "/audittype").Result; //client.BaseAddress
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    string data = response.Content.ReadAsStringAsync().Result;
-            //    listOfQuestions = JsonConvert.DeserializeObject<List<CQuestions>>(data);
-            //}
 
             if (responseInfo.IsSuccessStatusCode)
             {

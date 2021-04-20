@@ -17,18 +17,10 @@ namespace AuditManagementPortalClientMVC.Repository
                 using (var response = await httpClient.GetAsync("http://52.182.214.255/api/Token"))
                 {
                     string token = await response.Content.ReadAsStringAsync();
-                    //TempData["token"] = token;
                     t = token;
-                    //ViewBag.Token = token;
-                    // var t = TempData["token"].ToString();//1
-
                 }
-
-
             }
-
             return t;
-            //throw new NotImplementedException();
         }
     }
 }

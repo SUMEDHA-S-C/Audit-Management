@@ -1956,3 +1956,4 @@ C:\Users\User\Desktop\Cognizant\C#\ASP.Net\Final Project\AuditManagementPortalCl
 C:\Users\User\Desktop\Cognizant\C#\ASP.Net\Final Project\AuditManagementPortalClientMVC\AuditManagementPortalClientMVC\obj\Debug\net5.0\ref\AuditManagementPortalClientMVC.dll
 C:\Users\User\Desktop\Cognizant\C#\ASP.Net\Final Project\AuditManagementPortalClientMVC\AuditManagementPortalClientMVC\obj\Debug\net5.0\AuditManagementPortalClientMVC.pdb
 C:\Users\User\Desktop\Cognizant\C#\ASP.Net\Final Project\AuditManagementPortalClientMVC\AuditManagementPortalClientMVC\obj\Debug\net5.0\AuditManagementPortalClientMVC.genruntimeconfig.cache
+C:\Users\User\Desktop\Cognizant\C#\ASP.Net\Final Project\AuditManagementPortalClientMVC\AuditManagementPortalClientMVC\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll

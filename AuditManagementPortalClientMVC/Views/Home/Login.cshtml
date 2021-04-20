@@ -2,35 +2,23 @@
 
 @{ ViewData["Title"] = "Login"; }
 
-
-<!--<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>-->
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-</head>-->
-
-
     <form method="post">
         <div class="wrapper">
-            <img src="~/Images/login.jpg" id="login-img" />
+            <img src="~/Images/login.jpg" id="login-img" class="img-fluid" />
             <h2 class="form-title">User Login</h2>
-            <div class="mb-3 row">
-                <label for="Name" class="col-sm-2 col-form-label control-label">UserName</label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control" id="staticEmail" name="Name">
-                    <span asp-validation-for="Name" class="text-danger"></span>
-                </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">UserName</label>
+                <input class="form-control" asp-for="Name" id="exampleInputEmail1">
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="mb-3 row">
-                <label for="Password" class="col-sm-2 col-form-label control-label">Password</label>
-                <div class="col-sm-8">
-                    <input type="password" class="form-control" id="inputPassword" name="Password">
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" asp-for="Password" id="exampleInputPassword1">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="Toggle()">
+                <label class="form-check-label" for="exampleCheck1">Show password</label>
             </div>
             <div class="row justify-content-center">
                 <div class="form-group">
@@ -40,35 +28,6 @@
             <div style="color:red; text-align:center;">@ViewBag.ErrorMessage</div>
         </div>
     </form>
-
-
-
-<!--<hr />
-<div class="row">
-    <div class="col-md-4" id="login">
-        <form asp-action="Login" id="form" method="post">-->
-@*<div asp-validation-summary="All" class="text-danger"></div>*@
-<!--<div style="color:red;">@ViewBag.ErrorMessage</div>
-
-<div class="form-group">
-    <label asp-for="Name" class="control-label"></label>
-    <input asp-for="Name" class="form-control" />
-    <span asp-validation-for="Name" class="text-danger"></span>
-</div>
-<div class="form-group">
-    <label asp-for="Password" class="control-label"></label>
-    <input type="password" asp-for="Password" class="form-control" />
-    <span asp-validation-for="Password" class="text-danger"></span>-->
-@*<input type="checkbox" id="ch" name="ch" value="true"/>*@
-<!--</div>
-            <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-success" />
-            </div>
-        </form>
-    </div>
-</div>-->
-
-
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

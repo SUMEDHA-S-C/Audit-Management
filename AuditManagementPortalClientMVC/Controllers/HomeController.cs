@@ -40,23 +40,6 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            //try
-            //{
-            //    var t = HttpContext.Session.GetString("token").ToString();
-
-            //    if (t == "")
-            //    {
-            //        throw new Exception();
-            //    }
-            //    else { }
-            //}
-            //catch (Exception e)
-            //{
-            //    HttpContext.Session.Clear();
-            //    ViewBag.ErrorMessage = "";
-            //    return View();
-            //}
-            //return RedirectToAction("AuditType", "Home");
             return View();
         }
 
@@ -143,12 +126,6 @@ namespace AuditManagementPortalClientMVC.Controllers
 
             return RedirectToAction("AuditType", "Home");
         }
-
-        //[HttpGet]
-        //public IActionResult Checklist() {
-        //    return RedirectToAction("Severity", "Home");
-        //}
-
 
         [HttpGet]
         public IActionResult Severity()

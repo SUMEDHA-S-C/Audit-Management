@@ -26,7 +26,8 @@ namespace AuditManagementPortalClientMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AuditDbContext>(item => item.UseSqlServer(Configuration.GetConnectionString("conn")));
+            //services.AddDbContext<AuditDbContext>(item => item.UseSqlServer(Configuration.GetConnectionString("conn")));
+            services.AddDbContext<AuditDbContext>(context => { context.UseInMemoryDatabase("AuditPortal"); });
             services.AddControllersWithViews();
             services.AddMemoryCache();
             services.AddSession();

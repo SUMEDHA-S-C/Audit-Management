@@ -1,0 +1,72 @@
+﻿@model IEnumerable<string>
+
+@{ Layout = "_Authenticated"; }
+@{ ViewData["Title"] = "Checklist"; }
+
+
+@{ int count = 1;
+    string j = "q" + count.ToString(); }
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/page2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form asp-action="Severity" id="form" method="post">
+        <div class="wrapper">
+
+            <h2 class="form-title">Enter Project Details</h2>
+            <hr color="#fff">
+            <div class="form-group">
+                <label for="projectName">Project Name<span style="color:red;">*</span></label>
+                <input required type="text" class="form-control" id="projectName">
+            </div>
+            <div class="form-group">
+                <label for="projectManagerName">Project Manager Name<span style="color:red;">*</span></label>
+                <input required type="text" class="form-control" id="projectManagerName">
+            </div>
+            <div class="form-group">
+                <label for="applicationOwnerName">Application Owner Name<span style="color:red;">*</span></label>
+                <input required type="text" class="form-control" id="applicationOwnerName">
+            </div>
+            <div class="form-group">
+                <label class="datee control-label">Date<span style="color:red;">*</span></label>
+                <input required type="date" id="dtee" name="dtee" class="datee form-control" />
+            </div>
+
+            <hr color="#fff">
+            <div class="question-list">
+                <h2>List of questions</h2>
+                <ul class="list-group ">
+                    <table>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item)
+                    </td>
+                    <td><input type="checkbox" value="true" class="form-group" id="@j" name="@j" /></td>
+                </tr>count = count + 1;
+                                j = "q" + count.ToString();
+
+                            }
+                        </tbody>
+                    </table>
+
+                </ul>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-success" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

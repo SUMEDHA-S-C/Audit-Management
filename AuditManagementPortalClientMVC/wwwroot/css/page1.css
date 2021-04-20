@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #23f111; */
+    /* background-image: url("../background.jpg"); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: ; */
+    /* background-size: contain; */
+    color: #fff;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 130px auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-control,
+.form-select {
+    /* margin-bottom: 20px; */
+    width: 100%;
+}

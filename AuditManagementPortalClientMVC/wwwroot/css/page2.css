@@ -1,0 +1,49 @@
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: cover;
+    color: #fff;
+}
+
+
+/* Login page */
+
+.form-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 130px auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-control,
+.form-select {
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    width: 97%;
+}
+
+#login-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-left: 300px;
+}
+
+.list-group {
+    list-style: none;
+}
+
+.list-group li {
+    padding-bottom: 10px;
+}
+
+.question-list h2 {
+    text-align: center;
+}

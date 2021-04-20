@@ -1,0 +1,70 @@
+﻿@{ Layout = "_Authenticated"; }
+
+@{ ViewData["Title"] = "AuditType"; }
+
+@*<h1> @ViewBag.Token </h1>*@
+<html>
+<hr />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/page1.css">
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Checklist">
+        <div class="wrapper">
+            <h2 class="form-title">Welcome @ViewBag.User</h2>
+            <hr color="#fff">
+            <h3>Choose the audit type.</h3>
+            <div class="mb-3 row">
+
+                <!-- <label for="audiType">State</label> -->
+                <select class="form-control" id="audittype" name="audittype">
+                    <option value="Internal">Internal</option>
+                    <option value="SOX">SOX</option>
+                </select>
+            </div>
+
+            <div class="mb-3 row">
+
+                <div class="form-group">
+                    <input type="submit" value="Select" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
+
+<!--<h2>Choose The Audit Type</h2>-->
+@*<h4>1. Internal</h4>
+    <h6>OR</h6>
+    <h4>2. SOX</h4>*@
+
+
+<!--<div class="row">
+    <div class="col-md-4" id="login">
+        <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Checklist">
+
+            <div class="form-group">
+
+                <select class="form-control" id="audittype" name="audittype">
+                    <option value="Internal">Internal</option>
+                    <option value="SOX">SOX</option>
+
+                </select>-->
+@*<input required type="text" class="form-control" id="audittype" name="audittype" />*@
+
+<!--</div>
+            <div class="form-group">
+                <input type="submit" value="Select" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>-->
